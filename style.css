@@ -25,11 +25,13 @@ nav ul {
 }
 nav li {
     display: inline-block;
+    text-transform: capitalize;
 
 }
 nav a{
     padding: 10px;
     text-decoration: none;
+    color: #000;
 }
 .nav {
     color: black;
@@ -41,26 +43,13 @@ nav a{
     
     background-color:whitesmoke;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: whitesmoke;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: whitesmoke;}
-
 .apply {
   background-color: #4CAF50; /* Green */
   border:none;
@@ -86,9 +75,9 @@ nav a{
   }
 
 /* hero*/
-section.hero{ 
+/* section.hero{ 
 
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Images/hero.jpg");
     height: 80vh;
     background-position: center;
@@ -97,11 +86,11 @@ section.hero{
     position: relative;
 
 
-}
+} */
 .hero div{
     text-align: center;
     position: absolute;
-    top: 60%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
    align-items: center;
@@ -135,7 +124,7 @@ section.hero{
 
 /*articles */
 .card {
-    padding: 20px 0px;
+    padding: 30px 0px;
     margin: 20px 0px;
     background-color: #f8f9fa;
     border-top: 0.5px solid #dee2e6;
@@ -152,7 +141,7 @@ section.hero{
     justify-content: space-evenly;
 }
 .card article{
-
+     box-sizing: border-box;
     padding: 30px;
     border: 0.5px solid #dee2e6;
     width: 20%;
@@ -173,11 +162,12 @@ article h3 {
 .card article:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.card h2 {
+ h2 {
     font-weight: 100;
     text-transform: uppercase;
     display: inline;
-    border-bottom: 3px solid cadetblue;
+    width: fit-content;
+    border-bottom: 3px solid black;
 }
 .card a{
     align-self: flex-start;
@@ -193,3 +183,85 @@ article h3 {
     background-color: #0f7115;
     color: white;
    }
+   /*message*/
+   
+.msg {
+    box-sizing: border-box;
+    padding: 60px;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 140px;
+}
+.msg b{
+    text-transform: capitalize;
+}
+.msg-wrapper {
+   justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    
+}
+.msg-content1{
+    background-image: url('Images/pricipal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 40%;
+    border-radius: 50px;
+    
+}
+.msg-content{
+    padding: 32px;
+     background-color: #eaeceb;
+    width: 40%;
+    border-radius: 50px;
+}
+
+
+   
+
+   /*footer */
+   footer{
+    width: 100%;
+    background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+    
+   }
+   
+   footer div {
+    
+    width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+   }
+   footer a{
+    text-decoration:none;
+color:gray;
+transition:0.5s;
+   }
+footer a:hover{
+    
+    color:#fff;
+}
+footer ul{
+    width:100%;
+    list-style-type: none;
+}
+footer li {
+    display:inline-block;
+margin:0px 30px;
+}
+.footer-icons i{
+    font-size:2rem;
+margin:0% 1%;
+}
+.footer-icons i:hover {
+
+}
