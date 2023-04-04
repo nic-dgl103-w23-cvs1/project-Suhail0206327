@@ -42,7 +42,57 @@
         </nav>
       </header>
       <main>
-        <h1>register</h1>
+        <section class="register">
+         
+            
+            <img src="Images\registration.png" width="100%"  />
+          
+          <form  method="post" action="#">
+            <h2>registration form</h2>
+            <label for="first-name">first name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="name"
+              placeholder="James "
+              
+            />
+            <label for="last-name">last-name</label>
+            <input type="text" id="last-name" name="last-name"  placeholder="Potter"/>
+             
+            <label for="email">Email * (required)</label>
+    <input type="email" id="email" name="email" placeholder="Ex: james@gmail.com" required>
+
+    <label for="level">Level of education:</label>
+
+<select name="" id="level">
+  <option value="elementary">elementary school</option>
+  <option value="middle">middle school</option>
+  <option value="high">high school</option>
+ 
+</select>
+
+     <label for="password">password</label>
+            <input type="password" id="password" name="last-name"  placeholder="password"/>
+
+            <label for="confirm-password">confirm password</label>
+            <input type="password" id="confirm-password" name="confirm-password"  placeholder="confirm password"/>
+
+            <label for="phone-number">phone number</label>
+            <input type="number" id="phone-number" name="phone-number"  placeholder="phone number"/>
+            <fieldset>
+              <legend>Choose the term when you would like to study:</legend>
+              <input type="radio" id="w22" name="term" value="Winter 22">
+              <label for="w22">Winter 22 (Jan - Apr)</label><br>
+              <input type="radio" id="f22" name="term" value="Fall 22">
+              <label for="f22">Fall 22 (Sep - Dec)</label><br>
+              <input type="radio" id="w23" name="term" value="Winter 23">
+              <label for="w23">Winter 23 (Jan - Apr)</label>
+            </fieldset>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+       
       </main>
       <footer>
         <div class="footer-icons">
