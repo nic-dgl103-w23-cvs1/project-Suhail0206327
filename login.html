@@ -29,7 +29,7 @@
           <img src="Images\colleg_logo.jpg" width="150" height="150" />
         </a>
 
-        <ul>
+        <ul id="nav-items">
           <li class="nav">
             <a class="nav-link" href="index.html">home</a>
           </li>
@@ -46,6 +46,7 @@
             <a href="register.html" class="apply button1">apply now</a>
           </li>
         </ul>
+        <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
       </nav>
     </header>
     <main>
@@ -113,5 +114,11 @@
         business owner.
       </div>
     </footer>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
   </body>
 </html>

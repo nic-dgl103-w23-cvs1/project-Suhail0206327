@@ -16,31 +16,33 @@
     <link rel="" href="login.html">
 </head>
 <body>
-    <header>
-        <nav>
-          <a href="#">
-            <img src="Images\colleg_logo.jpg" width="150" height="150" />
-          </a>
-  
-          <ul>
-            <li class="nav">
-              <a class="nav-link" href="index.html">home</a>
-            </li>
-            <li class="nav">
-              <a class="nav-link" href="login.html">student login</a>
-            </li>
-            <li class="nav">
-              <a class="nav-link" href="about.html">about us</a>
-            </li>
-            <li class="nav">
-              <a class="nav-link" href="staff.html">our staffs </a>
-            </li>
-            <li >
-              <a href="register.html" class="apply button1">apply now</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav>
+      <a href="#">
+        <img src="Images\colleg_logo.jpg" width="150" height="150" />
+      </a>
+
+      <ul id="nav-items">
+        <li class="nav">
+          <a class="nav-link" href="index.html">home</a>
+        </li>
+        <li class="nav">
+          <a class="nav-link" href="login.html">student login</a>
+        </li>
+        <li class="nav">
+          <a class="nav-link" href="about.html">about us</a>
+        </li>
+        <li class="nav">
+          <a class="nav-link" href="staff.html">our staffs </a>
+        </li>
+        <li >
+          <a  href="register.html" class="apply button1">apply now</a>
+        </li>
+      </ul>
+      <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
+     
+    </nav>
+  </header>
       <main>
         <section class="register">
          
@@ -115,5 +117,11 @@
           This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.
       </div>
       </footer>
+      <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
 </body>
 </html>

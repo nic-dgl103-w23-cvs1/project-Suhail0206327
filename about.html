@@ -22,7 +22,7 @@
           <img src="Images\colleg_logo.jpg" width="150" height="150" />
         </a>
 
-        <ul>
+        <ul id="nav-items">
           <li class="nav">
             <a class="nav-link" href="index.html">home</a>
           </li>
@@ -35,19 +35,25 @@
           <li class="nav">
             <a class="nav-link" href="staff.html">our staffs </a>
           </li>
-          <li>
-            <a href="register.html" class="apply button1">apply now</a>
+          <li >
+            <a  href="register.html" class="apply button1">apply now</a>
           </li>
         </ul>
+        <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
+       
       </nav>
     </header>
 
-    <main>
+    <main class="main-about">
+      <h1>
+        our story
+      </h1>
       <section class="about">
         <img src="Images\school.jpg" width="50%" alt="school" />
+       
 
         <div>
-          <h2>about us</h2>
+        
           <p>
             Irshad English School (IES), is a prominent
             English medium School of the region, known for academic excellence
@@ -66,6 +72,33 @@
             well.
           </p>
         </div>
+      </section>
+
+      <section class="about">
+
+        <div>
+          
+          <p>
+            Irshad English School (IES), is a prominent
+            English medium School of the region, known for academic excellence
+            and remarkable co-curricular performance. Started in 1992 with just
+            2 5 KG students, Irshad has now grown to a full-fledged secondary
+            school with classes u p to Xth standard. The school got affiliation
+            to CBSE, Delhi in 2006. The school is run by the Islamic Service
+            Trust, Kozhikode, a prominent and pioneering charitable organisation
+            working for the educational and socio-cultural development of the
+            society. It is situated on the Nilambur-Perumpilavu State Highway in
+            a salubrious and pollution-free environment, just one km. from
+            Melattur Junction. The school provides ample space and opportunities
+            for the holistic development of the students. Over and above the
+            academic performance of the students, the school adopts an approach
+            that cares for their intellectual, moral and physical development as
+            well.
+          </p>
+        </div>
+        <img src="Images\hero.jpg" width="50%" alt="school" />
+
+      
       </section>
     </main>
     <footer>
@@ -93,5 +126,11 @@
         business owner.
       </div>
     </footer>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
   </body>
 </html>

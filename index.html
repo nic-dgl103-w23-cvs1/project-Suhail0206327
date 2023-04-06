@@ -18,7 +18,7 @@
           <img src="Images\colleg_logo.jpg" width="150" height="150" />
         </a>
 
-        <ul>
+        <ul id="nav-items">
           <li class="nav">
             <a class="nav-link" href="index.html">home</a>
           </li>
@@ -31,20 +31,21 @@
           <li class="nav">
             <a class="nav-link" href="staff.html">our staffs </a>
           </li>
-          <li >
-            <a  href="register.html" class="apply button1">apply now</a>
+          <li>
+            <a href="register.html" class="apply button1">apply now</a>
           </li>
         </ul>
+        <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <video autoplay muted loop >
-            <source src="Images/intro.mp4" type="video/mp4" />
-          </video>
+        <video autoplay muted loop>
+          <source src="Images/intro.mp4" type="video/mp4" />
+        </video>
         <div>
           <h1>irshad english school</h1>
-          <a>explore</a>
+          <a href="explore.html">explore</a>
         </div>
       </section>
 
@@ -68,10 +69,11 @@
 
             <h3>canteen</h3>
             <p>
-              The library staff is responsible for managing the collection,
-              maintenance. The the facility, and providing services to users.
-              They may also offer guidance and support for research and other
-              academic projects.
+              The functions of school canteens are to: provide a service to the
+              school community. provide a variety of nutritious and attractively
+              presented food and drinks at a reasonable cost and reinforce
+              classroom learning. The canteen provides a rewarding opportunity
+              for parents to be involved in their child's school.
             </p>
             <a href="#">view</a>
           </article>
@@ -80,10 +82,11 @@
 
             <h3>sports</h3>
             <p>
-              The library staff is responsible for managing the collection,
-              maintenance. The the facility, and providing services to users.
-              They may also offer guidance and support for research and other
-              academic projects.
+              Sports activities establish the qualities of discipline which help
+              in every field of life. The sports activities teach the physical
+              mental and tactical training to students. Students should have to
+              follow the rules and regulations of the game, obey and respect the
+              decision of the coach.
             </p>
             <a href="#">view</a>
           </article>
@@ -92,10 +95,12 @@
 
             <h3>students union</h3>
             <p>
-              The library staff is responsible for managing the collection,
-              maintenance. The the facility, and providing services to users.
-              They may also offer guidance and support for research and other
-              academic projects.
+              The student union is autonomous, its internal life organized by
+              its by-laws. The student unions are responsible for all
+              representation of the students and elect the student members of
+              different administrative organs. They usually coordinate and
+              finance the activities of smaller, more specialized student
+              organizations.
             </p>
             <a href="#">view</a>
           </article>
@@ -104,24 +109,21 @@
       <section class="msg">
         <h2>principals message</h2>
         <div class="msg-wrapper">
-            <div class="msg-content1">
-          
+          <div class="msg-content1"></div>
+          <div class="msg-content">
+            <img src="Images\comas.png" width="50" />
+            <p>
+              Imparting quality education regardless of caste, creed, race or
+              gender giving emphasis to formation of character, self-confidence,
+              co-operation, leadership and responsibility. Thereby moulding
+              healthy generations who come. Irshad English School believes in
+              imparting value based education to all its students. In addition
+              to high quality academics we provide a variety of opportunities
+              for all round development of a child through music, sport
+            </p>
+            <b>celia almenda</b>
           </div>
-            <div class ="msg-content ">
-                <img src="Images\comas.png" width="50">
-                <p>
-                    Imparting quality education regardless of caste, creed, race or
-                gender giving emphasis to formation of character, self-confidence,
-                co-operation, leadership and responsibility. Thereby moulding
-                healthy generations who come. Irshad English School believes in
-                imparting value based education to all its students. In addition to
-                high quality academics we provide a variety of opportunities for all
-                round development of a child through music, sport
-                </p>
-                <b>celia almenda</b>
-            </div>
         </div>
-        
       </section>
       <!-- <section class="message">
         <div>
@@ -156,10 +158,20 @@
           <li><a href="#">Career</a></li>
         </ul>
       </div>
-      <div>IES Copyright © 2023 content - All rights reserved<br><br>
-        
-        This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.
-    </div>
+      <div>
+        IES Copyright © 2023 content - All rights reserved<br /><br />
+
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
+      </div>
     </footer>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
   </body>
 </html>

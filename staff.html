@@ -18,31 +18,33 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-          <a href="#">
-            <img src="Images\colleg_logo.jpg" width="150" height="150" />
-          </a>
-  
-          <ul>
-            <li class="nav">
-              <a class="nav-link" href="index.html">home</a>
-            </li>
-            <li class="nav">
-              <a class="nav-link" href="login.html">student login</a>
-            </li>
-            <li class="nav">
-              <a class="nav-link" href="about.html">about us</a>
-            </li>
-            <li class="nav">
-              <a class="nav-link" href="staff.html">our staffs </a>
-            </li>
-            <li >
-              <a href="register.html  " class="apply button1">apply now</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav>
+      <a href="#">
+        <img src="Images\colleg_logo.jpg" width="150" height="150" />
+      </a>
+
+      <ul id="nav-items">
+        <li class="nav">
+          <a class="nav-link" href="index.html">home</a>
+        </li>
+        <li class="nav">
+          <a class="nav-link" href="login.html">student login</a>
+        </li>
+        <li class="nav">
+          <a class="nav-link" href="about.html">about us</a>
+        </li>
+        <li class="nav">
+          <a class="nav-link" href="staff.html">our staffs </a>
+        </li>
+        <li >
+          <a  href="register.html" class="apply button1">apply now</a>
+        </li>
+      </ul>
+      <a class="toggle" onclick="showNav()"> <i class="fa fa-bars"></i></a>
+     
+    </nav>
+  </header>
       <main>
         <section class="staffs">
 <h1>Our Team</h1>
@@ -50,10 +52,10 @@
           <div class="column">
             <div class="card">
              <div class="image-container">
-              <img src="Images\teacher2.jpg">
+              <img src="Images\pricipal.jpg">
              </div>
-             <h3>James</h3>
-             <p>academic counselor</p>
+             <h3>Cilean</h3>
+             <p>principal</p>
              <div class="icons">
            
               <a href="#"><i class="fa fa-facebook"></i></a>
@@ -91,7 +93,7 @@
           <div class="column">
             <div class="card">
              <div class="image-container">
-              <img src="Images\teacher2.jpg">
+              <img src="Images\teacher3.webp">
              </div>
              <h3>Herran</h3>
              <p>Maths Tutor</p>
@@ -136,11 +138,11 @@
           <div class="column">
             <div class="card">
              <div class="image-container">
-              <img src="Images\teacher2.jpg">
+              <img src="Images\face1.avif">
              </div>
              <h3>Sergio</h3>
-             <p>Assistant professor</p>
-             <div class="icons">
+             <p>Librarian</p>
+             <div class="icons1" id="icon">
            
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-instagram"></i></a>
@@ -157,7 +159,7 @@
           <div class="column">
             <div class="card">
              <div class="image-container">
-              <img src="Images\teacher2.jpg">
+              <img src="Images\teacher.jpg">
              </div>
              <h3>Sergio</h3>
              <p>Assistant professor</p>
@@ -200,5 +202,11 @@
           This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.
       </div>
       </footer>
+      <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
 </body>
 </html>
