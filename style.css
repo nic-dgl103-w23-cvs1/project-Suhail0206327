@@ -11,7 +11,15 @@ body {
    
 }
 
+header {
+    width: 100%;
+}
+header ul {
 
+    width: 100%;
+    display: flex;
+  
+}
 nav {
     width: 100%;
     display: flex;
@@ -107,19 +115,25 @@ nav a{
 }
 .hero a{
 
-    width: 70px;
-    border: 1px solid black;
+    color: white;
+    width: 60%;
+    padding: 16px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: black;
-    padding: 14px;
-    font-size: 1rem;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
     cursor: pointer;
-    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.7);
 }
+.hero video {
 
+    width: 100%;
+}
 .hero a:hover {
- background-color: rgba(0, 0, 0, 0.7);
+background-color: black;
  color: white;
 }
 
@@ -137,6 +151,7 @@ nav a{
     align-items: center;
 }
 .card div {
+
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -480,7 +495,7 @@ fieldset {
     background-color: #ffff;
 }
 
-.card .image-container {
+.staffs .image-container {
 
     
     width: 8em;
@@ -492,22 +507,22 @@ fieldset {
     margin: 0 auto 2em auto;
 }
 
-.card img {
+.staffs .card img {
     width: 100%;
     border-radius: 50%;
 }
 
-.card h3 {
+.staffs .card h3 {
     font-weight: 500;
 }
 
-.card p {
+.staffs .card p {
     font-weight: 300;
     text-transform: uppercase;
     margin: 0.5em 0 2em 0;
     letter-spacing: 2px;
 }
-.card .icons {
+.staffs .card .icons {
     
      
     width: 100%;
@@ -517,7 +532,7 @@ fieldset {
     justify-content: space-evenly;
 }
 
-.card a {
+.staffs .card a {
     border: 1.5px solid #1f324e; 
     text-decoration:  none;
     color: inherit;
@@ -525,28 +540,117 @@ fieldset {
     
 }
 
-.card a:hover {
-
+.staffs .card a:hover {
+    color: white;
     background-color: #1f324e;
 }
 
-.card:hover {
+.staffs .card:hover {
     
 background-color: aliceblue;
     
   
 
 }
-.card:hover .image-container  {
+.staffs .card:hover .image-container  {
 
     
     transform: scale(1.1);
     
+
+}
+.about {
+
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+ .about div {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+     padding: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    header ul{
+        
+        flex-direction: column;
+    }
+
+    .hero div{
+        top: 50%;
+    }
+    .hero h1 {
+
+        font-size: 1.5rem;
+    }
+    .card {
+height: 100%;
+       
+    }
+
+    .card div{
+
+        flex-direction: column;
+        height: 100%;
+    }
+
+    
+    .card article {
+
+        width: 100%;
+    }
+
+    .msg {
+        justify-content: space-between;
+height: 170vh;
+padding: 0px 60px;
+    }
+
+    .msg-wrapper{
+             height: 100%;
+        flex-direction: column;
+    }
+
+    .msg-content{
+
+        width: 100%;
+    }
+
+    .msg-content1 {
+        width: 100%;
+    }
+
+    .login1 {
+        display: none;
+    }
+
+    .login2 {
+         padding: 30px;
+    }
+    .register img{
+
+        display: none;
+    }
+    
+    .register form {
+    
+        width: 90%;
+    }
+
 }
 
 
 @media screen and (min-width: 768px){
-    
+   
     .staffs {
 
         padding: 1em 7em;
@@ -573,7 +677,6 @@ background-color: aliceblue;
 }
 
 }
-
 
 
 
